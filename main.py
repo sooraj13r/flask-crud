@@ -19,5 +19,5 @@ api.add_resource(Test,
                 )               
 
 if __name__ == "__main__":
-    app.run(port = 5000, debug =True)
-    logging.info('Host sarted on port:{}'.format(5000))
+    app.run(port = 5080, debug =True)
+    logging.info('Host sarted on port:{}'.format(5080))
