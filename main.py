@@ -6,7 +6,7 @@ from log_config import config_log
 
 config_log()
 app = Flask(__name__)
-api = Api(app)
+api = Api(main)
 
 api.add_resource(BookService,
                  '/books/<string:book_id>'
