@@ -4,11 +4,20 @@ from query_config import *
 import logging
 
 
+# conn = pymysql.connect(
+#     host = 'localhost',
+#     database = 'book_store',
+#     user = 'root',
+#     password = '',
+#     charset = 'utf8mb4',
+#     cursorclass = pymysql.cursors.DictCursor 
+
+# )
 conn = pymysql.connect(
-    host = 'localhost',
-    database = 'book_store',
-    user = 'root',
-    password = '',
+    host = '46.17.172.154',
+    database = 'u310898995_book_store',
+    user = 'u310898995_bookuser',
+    password = 'Book@1234',
     charset = 'utf8mb4',
     cursorclass = pymysql.cursors.DictCursor 
 
