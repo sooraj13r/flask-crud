@@ -22,7 +22,7 @@ conn = pymysql.connect(
 )
 
 
-class Test():
+class BookData():
 
     '''
     DAO class to retrieve all data from database.
