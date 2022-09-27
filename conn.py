@@ -1,7 +1,5 @@
 import pymysql
 from flask import jsonify
-from query_config import *
-import logging
 
 
 # conn = pymysql.connect(
@@ -24,7 +22,7 @@ conn = pymysql.connect(
 )
 
 
-class BookData():
+class Test():
 
     '''
     DAO class to retrieve all data from database.
@@ -47,11 +45,12 @@ class BookData():
         '''
         try:
             cursor = conn.cursor()
+            query_select_all = "SELECT * FROM book"
             cursor.execute(query_select_all)
             result = cursor.fetchall() 
             return jsonify({'Books':result})
         except:
-            logging.error("An error occured! @ Bookdata.get_all_books()")
+            
             return {'message':'An error occured!'}
 
         
