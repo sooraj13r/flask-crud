@@ -5,7 +5,7 @@ from conn import BookData
 
 class Test(Resource):
     def get(self):
-        obj = BookData()
-        res = obj.get_all_books()
-        return res
+        #obj = BookData()
+        #res = obj.get_all_books()
+        return {'message': 'Blaa'}
     
